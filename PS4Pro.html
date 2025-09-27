@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PS4 Pro - CARDY STORE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-content">
+            <div class="menu-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="search-icon">
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="logo">
+                <img src="logo_cardystore.png" alt="CARDY STORE">
+            </div>
+            <div class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </div>
+        </div>
+        
+        <!-- Menu déroulant -->
+        <nav class="dropdown-menu">
+            <a href="index.html"><i class="fas fa-home"></i> Accueil</a>
+            <a href="services.html"><i class="fas fa-concierge-bell"></i> Services</a>
+            <a href="produits.html"><i class="fas fa-gamepad"></i> Produits</a>
+            <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+        </nav>
+    </header>
+
+    <!-- Page produit détaillée -->
+    <section class="product-detail-page">
+        <div class="container">
+            <a href="produits.html" class="back-button"><i class="fas fa-arrow-left"></i> Retour aux produits</a>
+            
+            <div class="product-detail">
+                <div class="product-gallery">
+                    <div class="product-main-image">
+                        <img src="ps4_pro.jpg" alt="PS4 Pro" id="main-image">
+                    </div>
+                    <div class="product-thumbnails">
+                        <div class="product-thumbnail active" data-image="ps4_pro.jpg">
+                            <img src="ps4_pro.jpg" alt="PS4 Pro vue 1">
+                        </div>
+                        <div class="product-thumbnail" data-image="ps4_pro_2.jpg">
+                            <img src="ps4_pro_2.jpg" alt="PS4 Pro vue 2" onerror="this.style.display='none'">
+                        </div>
+                        <div class="product-thumbnail" data-image="ps4_pro_3.jpg">
+                            <img src="ps4_pro_3.jpg" alt="PS4 Pro vue 3" onerror="this.style.display='none'">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-info-detail">
+                    <h1>PS4 Pro</h1>
+                    <p class="product-price">275.000 FCFA</p>
+                    
+                    <div class="product-description">
+                        <p>PS4 Pro reconditionnée avec disque dur 1To et +20 jeux. Performance optimisée pour la 4K et expérience gaming premium.</p>
+                    </div>
+                    
+                    <div class="product-features">
+                        <h3>Caractéristiques principales :</h3>
+                        <ul>
+                            <li>Console PlayStation 4 Pro reconditionnée</li>
+                            <li>Disque dur 1To</li>
+                            <li>+20 jeux préinstallés</li>
+                            <li>Manette DualShock 4 incluse</li>
+                            <li>Support 4K et HDR</li>
+                            <li>Performance améliorée pour jeux en 4K</li>
+                            <li>Câbles HDMI et alimentation fournis</li>
+                            <li>Garantie 3 mois</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="product-options">
+                        <h3>Jeux inclus (sélection) :</h3>
+                        <ul>
+                            <li>God of War (2018)</li>
+                            <li>Red Dead Redemption 2</li>
+                            <li>The Last of Us Part II</li>
+                            <li>Cyberpunk 2077</li>
+                            <li>Assassin's Creed Valhalla</li>
+                            <li>Et 15 jeux supplémentaires au choix</li>
+                        </ul>
+                    </div>
+                    
+                    <button class="btn add-to-cart-btn" style="padding: 15px 30px; font-size: 18px; margin-top: 20px;">
+                        <i class="fas fa-cart-plus"></i> Ajouter au panier
+                    </button>
+                    
+                    <a href="https://wa.me/2290166364730?text=Je suis intéressé par la PS4 Pro. Pouvez-vous me donner plus d'informations?" 
+                       class="btn" 
+                       style="background: #25D366; margin-left: 10px; padding: 15px 30px; font-size: 18px;" 
+                       target="_blank">
+                        <i class="fab fa-whatsapp"></i> Commander sur WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p><i class="fas fa-phone"></i> +229 01 66 36 47 30</p>
+                    <p><i class="fas fa-envelope"></i> info@cardystore.com</p>
+                    <p><i class="fab fa-whatsapp"></i> +229 01 66 36 47 30</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Adresse</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Menontin, Église Catholique</p>
+                    <p>En face de l'immeuble blanc (au bord du pavé)</p>
+                    <p>Cotonou, Bénin</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Horaires</h3>
+                    <p>Lundi - Vendredi: 8h00 - 19h00</p>
+                    <p>Samedi: 9h00 - 18h00</p>
+                    <p>Dimanche: 10h00 - 15h00</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 CARDY STORE. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const thumbnails = document.querySelectorAll('.product-thumbnail');
+            const mainImage = document.getElementById('main-image');
+            
+            thumbnails.forEach(thumb => {
+                thumb.addEventListener('click', function() {
+                    thumbnails.forEach(t => t.classList.remove('active'));
+                    this.classList.add('active');
+                    const newImage = this.getAttribute('data-image');
+                    mainImage.src = newImage;
+                });
+            });
+            
+            document.querySelector('.add-to-cart-btn').addEventListener('click', function() {
+                addToCart('ps4pro', 275000, 'PS4 Pro');
+            });
+        });
+        
+        function addToCart(productId, price, productName) {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            const existingItem = cart.find(item => item.id === productId);
+            
+            if (existingItem) {
+                existingItem.quantity += 1;
+            } else {
+                cart.push({
+                    id: productId,
+                    name: productName,
+                    price: price,
+                    images: ['ps4_pro.jpg'],
+                    quantity: 1
+                });
+            }
+            
+            localStorage.setItem('cart', JSON.stringify(cart));
+            updateCartDisplay();
+            alert('PS4 Pro ajoutée au panier!');
+        }
+        
+        function updateCartDisplay() {
+            const cart = JSON.parse(localStorage.getItem('cart')) || [];
+            const cartCount = document.querySelector('.cart-count');
+            let totalItems = 0;
+            
+            cart.forEach(item => {
+                totalItems += item.quantity;
+            });
+            
+            cartCount.textContent = totalItems;
+        }
+    </script>
+</body>
+</html>
