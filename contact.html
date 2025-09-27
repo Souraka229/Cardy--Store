@@ -14,12 +14,20 @@
             <div class="menu-icon">
                 <i class="fas fa-bars"></i>
             </div>
-            <div class="search-icon">
-                <i class="fas fa-search"></i>
+            
+            <div class="search-container">
+                <div class="search-bar">
+                    <input type="text" id="search-input" placeholder="Rechercher un produit...">
+                    <button type="button" id="search-button">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
             </div>
+            
             <div class="logo">
                 <img src="logo_cardystore.png" alt="CARDY STORE">
             </div>
+            
             <div class="cart-icon">
                 <i class="fas fa-shopping-cart"></i>
                 <span class="cart-count">0</span>
@@ -35,90 +43,205 @@
         </nav>
     </header>
 
-    <!-- Contenu Contact -->
+    <!-- Contenu Contact Optimisé -->
     <section class="contact-page">
         <div class="container">
-            <h1 class="section-title">Contactez-nous</h1>
+            <div class="contact-header">
+                <h1 class="section-title">Contactez-nous</h1>
+                <p class="contact-subtitle">Nous sommes à votre écoute pour toutes vos questions sur les consoles PlayStation et nos services</p>
+            </div>
             
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="info-card">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <h3>Adresse</h3>
-                        <p>Menontin, Église Catholique</p>
-                        <p>En face de l'immeuble blanc (au bord du pavé)</p>
-                        <p>Cotonou, Bénin</p>
+            <div class="contact-grid">
+                <!-- Informations de contact -->
+                <div class="contact-info-section">
+                    <div class="contact-info-card">
+                        <h2><i class="fas fa-map-marker-alt"></i> Notre Adresse</h2>
+                        <div class="info-content">
+                            <div class="info-item">
+                                <i class="fas fa-store"></i>
+                                <div>
+                                    <h4>Boutique CARDY STORE</h4>
+                                    <p>Menontin, Église Catholique</p>
+                                    <p>En face de l'immeuble blanc (au bord du pavé)</p>
+                                    <p>Cotonou, Bénin</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    
-                    <div class="info-card">
-                        <i class="fas fa-phone"></i>
-                        <h3>Téléphone</h3>
-                        <p>+229 01 66 36 47 30</p>
+
+                    <div class="contact-info-card">
+                        <h2><i class="fas fa-phone"></i> Nous Contacter</h2>
+                        <div class="info-content">
+                            <div class="info-item">
+                                <i class="fas fa-mobile-alt"></i>
+                                <div>
+                                    <h4>Téléphone</h4>
+                                    <p>+229 01 66 36 47 30</p>
+                                    <a href="tel:+2290166364730" class="contact-link">Appeler maintenant</a>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <h4>Email</h4>
+                                    <p>info@cardystore.com</p>
+                                    <a href="mailto:info@cardystore.com" class="contact-link">Envoyer un email</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    
-                    <div class="info-card">
-                        <i class="fas fa-envelope"></i>
-                        <h3>Email</h3>
-                        <p>info@cardystore.com</p>
+
+                    <div class="contact-info-card">
+                        <h2><i class="fab fa-whatsapp"></i> WhatsApp Business</h2>
+                        <div class="info-content">
+                            <div class="info-item">
+                                <i class="fab fa-whatsapp"></i>
+                                <div>
+                                    <h4>Support Instantané</h4>
+                                    <p>+229 01 66 36 47 30</p>
+                                    <a href="https://wa.me/2290166364730" class="btn btn-whatsapp" target="_blank">
+                                        <i class="fab fa-whatsapp"></i> Discuter sur WhatsApp
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    
-                    <div class="info-card">
-                        <i class="fab fa-whatsapp"></i>
-                        <h3>WhatsApp</h3>
-                        <p>+229 01 66 36 47 30</p>
-                        <a href="https://wa.me/2290166364730" class="btn" target="_blank">Nous écrire sur WhatsApp</a>
+
+                    <div class="contact-info-card">
+                        <h2><i class="fas fa-clock"></i> Horaires d'Ouverture</h2>
+                        <div class="info-content">
+                            <div class="schedule-item">
+                                <span class="day">Lundi - Vendredi</span>
+                                <span class="hours">8h00 - 19h00</span>
+                            </div>
+                            <div class="schedule-item">
+                                <span class="day">Samedi</span>
+                                <span class="hours">9h00 - 18h00</span>
+                            </div>
+                            <div class="schedule-item">
+                                <span class="day">Dimanche</span>
+                                <span class="hours">10h00 - 15h00</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Carte Google Maps -->
-                <div class="map-container">
-                    <h3>Notre Localisation</h3>
-                    <div id="map">
-                        <!-- Intégration Google Maps -->
-                        <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.238389832761!2d2.4204154157586717!3d6.356540295397352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1023553d8b8c7c1f%3A0x8c5b5e5e5e5e5e5e!2sMenontin%2C%20Cotonou%2C%20B%C3%A9nin!5e0!3m2!1sfr!2sfr!4v1234567890123!5m2!1sfr!2sfr" 
-                            width="100%" 
-                            height="400" 
-                            style="border:0; border-radius: 10px;" 
-                            allowfullscreen="" 
-                            loading="lazy" 
-                            referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
+                <!-- Carte et Formulaire -->
+                <div class="contact-form-section">
+                    <!-- Carte Google Maps -->
+                    <div class="map-card">
+                        <h3><i class="fas fa-map"></i> Localisation sur la Carte</h3>
+                        <div class="map-container">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.238389832761!2d2.4204154157586717!3d6.356540295397352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1023553d8b8c7c1f%3A0x8c5b5e5e5e5e5e5e!2sMenontin%2C%20Cotonou%2C%20B%C3%A9nin!5e0!3m2!1sfr!2sfr!4v1234567890123!5m2!1sfr!2sfr" 
+                                width="100%" 
+                                height="300" 
+                                style="border:0; border-radius: 10px;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                            <div class="map-actions">
+                                <a href="https://maps.google.com/maps?q=Menontin,+Cotonou,+Bénin" class="btn" target="_blank">
+                                    <i class="fas fa-directions"></i> Itinéraire
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Formulaire de contact -->
+                    <div class="form-card">
+                        <h3><i class="fas fa-paper-plane"></i> Envoyez-nous un Message</h3>
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">
+                                        <i class="fas fa-user"></i> Nom complet *
+                                    </label>
+                                    <input type="text" id="name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">
+                                        <i class="fas fa-envelope"></i> Email *
+                                    </label>
+                                    <input type="email" id="email" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="phone">
+                                        <i class="fas fa-phone"></i> Téléphone
+                                    </label>
+                                    <input type="tel" id="phone">
+                                </div>
+                                <div class="form-group">
+                                    <label for="subject">
+                                        <i class="fas fa-tag"></i> Sujet *
+                                    </label>
+                                    <select id="subject" required>
+                                        <option value="">Sélectionnez un sujet</option>
+                                        <option value="question">Question sur un produit</option>
+                                        <option value="service">Demande de service</option>
+                                        <option value="reparation">Demande de réparation</option>
+                                        <option value="partenariat">Partenariat</option>
+                                        <option value="autre">Autre</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">
+                                    <i class="fas fa-comment"></i> Message *
+                                </label>
+                                <textarea id="message" rows="6" required 
+                                          placeholder="Décrivez votre demande en détail..."></textarea>
+                                <div class="char-count">
+                                    <span id="char-counter">0</span> caractères
+                                </div>
+                            </div>
+
+                            <div class="form-actions">
+                                <button type="submit" class="btn btn-primary">
+                                    <i class="fas fa-paper-plane"></i> Envoyer le Message
+                                </button>
+                                <button type="button" class="btn btn-secondary" id="whatsapp-direct">
+                                    <i class="fab fa-whatsapp"></i> WhatsApp Direct
+                                </button>
+                            </div>
+                        </form>
                     </div>
                 </div>
+            </div>
 
-                <!-- Formulaire de contact -->
-                <div class="contact-form">
-                    <h3>Envoyez-nous un message</h3>
-                    <form id="contact-form">
-                        <div class="form-group">
-                            <label for="name">Nom complet *</label>
-                            <input type="text" id="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email *</label>
-                            <input type="email" id="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Téléphone</label>
-                            <input type="tel" id="phone">
-                        </div>
-                        <div class="form-group">
-                            <label for="subject">Sujet *</label>
-                            <select id="subject" required>
-                                <option value="">Sélectionnez un sujet</option>
-                                <option value="question">Question sur un produit</option>
-                                <option value="service">Demande de service</option>
-                                <option value="reparation">Demande de réparation</option>
-                                <option value="autre">Autre</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message *</label>
-                            <textarea id="message" rows="5" required placeholder="Décrivez votre demande en détail..."></textarea>
-                        </div>
-                        <button type="submit" class="btn">Envoyer le message</button>
-                    </form>
+            <!-- Section Services Rapides -->
+            <div class="quick-services">
+                <h3>Services Rapides</h3>
+                <div class="services-grid">
+                    <div class="quick-service-card">
+                        <i class="fas fa-tools"></i>
+                        <h4>Réparation Express</h4>
+                        <p>Diagnostic gratuit de votre console</p>
+                        <a href="services.html" class="service-link">Découvrir</a>
+                    </div>
+                    <div class="quick-service-card">
+                        <i class="fas fa-gamepad"></i>
+                        <h4>Installation Jeux</h4>
+                        <p>PS4/PS5 - Large choix disponible</p>
+                        <a href="services.html" class="service-link">Découvrir</a>
+                    </div>
+                    <div class="quick-service-card">
+                        <i class="fas fa-shipping-fast"></i>
+                        <h4>Livraison Express</h4>
+                        <p>Service de livraison disponible</p>
+                        <a href="services.html" class="service-link">Découvrir</a>
+                    </div>
+                    <div class="quick-service-card">
+                        <i class="fas fa-headset"></i>
+                        <h4>Support Technique</h4>
+                        <p>Assistance 7j/7 par nos experts</p>
+                        <a href="services.html" class="service-link">Découvrir</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -148,7 +271,7 @@
                 </div>
             </div>
             <div class="copyright">
-                <p>&copy; 2023 CARDY STORE. Tous droits réservés.</p>
+                <p>&copy; 2025 CARDY STORE. Tous droits réservés.</p>
             </div>
         </div>
     </footer>
@@ -171,23 +294,86 @@
 
     <script src="script.js"></script>
     <script>
-        // Formulaire de contact
-        document.getElementById('contact-form').addEventListener('submit', function(e) {
-            e.preventDefault();
+        // Script spécifique à la page contact
+        document.addEventListener('DOMContentLoaded', function() {
+            // Compteur de caractères pour le message
+            const messageTextarea = document.getElementById('message');
+            const charCounter = document.getElementById('char-counter');
             
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const phone = document.getElementById('phone').value;
-            const subject = document.getElementById('subject').value;
-            const message = document.getElementById('message').value;
-            
-            const fullMessage = `Nouveau message de contact CARDY STORE:\n\nNom: ${name}\nEmail: ${email}\nTéléphone: ${phone}\nSujet: ${subject}\nMessage: ${message}`;
-            const phoneNumber = "+2290166364730";
-            const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(fullMessage)}`;
-            
-            window.open(url, '_blank');
-            this.reset();
-            alert('Votre message a été envoyé avec succès! Nous vous répondrons rapidement.');
+            if (messageTextarea && charCounter) {
+                messageTextarea.addEventListener('input', function() {
+                    charCounter.textContent = this.value.length;
+                });
+            }
+
+            // Formulaire de contact
+            const contactForm = document.getElementById('contact-form');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    const name = document.getElementById('name').value;
+                    const email = document.getElementById('email').value;
+                    const phone = document.getElementById('phone').value;
+                    const subject = document.getElementById('subject').value;
+                    const message = document.getElementById('message').value;
+                    
+                    const fullMessage = `📧 Nouveau message de contact CARDY STORE:\n\n` +
+                                      `👤 Nom: ${name}\n` +
+                                      `📧 Email: ${email}\n` +
+                                      `📞 Téléphone: ${phone || 'Non renseigné'}\n` +
+                                      `🏷️ Sujet: ${subject}\n\n` +
+                                      `💬 Message:\n${message}`;
+                    
+                    const phoneNumber = "+2290166364730";
+                    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(fullMessage)}`;
+                    
+                    window.open(url, '_blank');
+                    
+                    // Feedback visuel
+                    const submitBtn = contactForm.querySelector('button[type="submit"]');
+                    const originalText = submitBtn.innerHTML;
+                    submitBtn.innerHTML = '<i class="fas fa-check"></i> Message Envoyé!';
+                    submitBtn.style.background = 'linear-gradient(135deg, #27ae60, #2ecc71)';
+                    
+                    setTimeout(() => {
+                        contactForm.reset();
+                        charCounter.textContent = '0';
+                        submitBtn.innerHTML = originalText;
+                        submitBtn.style.background = '';
+                    }, 2000);
+                });
+            }
+
+            // Bouton WhatsApp direct
+            const whatsappBtn = document.getElementById('whatsapp-direct');
+            if (whatsappBtn) {
+                whatsappBtn.addEventListener('click', function() {
+                    const phoneNumber = "+2290166364730";
+                    const url = `https://wa.me/${phoneNumber}`;
+                    window.open(url, '_blank');
+                });
+            }
+
+            // Animation des cartes au scroll
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('reveal-active');
+                    }
+                });
+            }, observerOptions);
+
+            // Observer les éléments à animer
+            document.querySelectorAll('.contact-info-card, .form-card, .map-card, .quick-service-card').forEach(el => {
+                el.classList.add('reveal');
+                observer.observe(el);
+            });
         });
     </script>
 </body>
